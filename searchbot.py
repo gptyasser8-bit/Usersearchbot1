@@ -1,3 +1,4 @@
+print("### NEW BOT CODE LOADED ###")
 import os
 from telethon import TelegramClient
 from telethon.tl.functions.messages import SearchRequest
