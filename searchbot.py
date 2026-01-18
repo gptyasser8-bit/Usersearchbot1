@@ -1,4 +1,3 @@
-print("### NEW BOT CODE LOADED ###")
 import os
 from telethon import TelegramClient
 from telethon.tl.functions.messages import SearchRequest
@@ -52,4 +51,6 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = ApplicationBuilder().token(bot_token).build()
 app.add_handler(CommandHandler("search", search))
-app.run_polling()
+
+print("Bot running...")
+app.run_polling(close_loop=False)
